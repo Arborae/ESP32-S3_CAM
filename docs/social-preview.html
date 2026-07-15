@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 1280px; height: 640px; overflow: hidden; }
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: #e9fbf6;
+      background:
+        radial-gradient(1100px 680px at 84% -12%, rgba(20, 200, 180, 0.30), transparent 60%),
+        radial-gradient(900px 620px at 6% 118%, rgba(60, 120, 240, 0.20), transparent 55%),
+        linear-gradient(140deg, #08110f 0%, #0b1a1c 55%, #08120f 100%);
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 46px 46px;
+      mask-image: radial-gradient(1000px 620px at 50% 42%, #000 55%, transparent 100%);
+    }
+
+    .wrap { position: relative; height: 100%; padding: 70px 80px; display: flex; flex-direction: column; justify-content: space-between; }
+
+    .kicker { display: inline-flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #4fd6c0; }
+    .kicker .dot { width: 12px; height: 12px; border-radius: 50%; background: #2ea043; box-shadow: 0 0 16px #2ea043; }
+
+    h1 {
+      margin-top: 22px; font-size: 84px; font-weight: 800; line-height: 0.98; letter-spacing: -2px;
+      background: linear-gradient(92deg, #ffffff 28%, #6ff0d6 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .sub { margin-top: 12px; font-size: 36px; font-weight: 600; color: #9fdccd; }
+    .sub b { color: #14c8b4; }
+
+    .flow {
+      margin-top: 30px; display: inline-flex; align-items: center; gap: 16px;
+      font-family: Consolas, "Cascadia Mono", monospace; font-size: 23px; color: #cdeee6;
+      padding: 14px 22px; background: rgba(20, 200, 180, 0.10);
+      border: 1px solid rgba(79, 214, 192, 0.35); border-radius: 12px;
+    }
+    .flow .arrow { color: #4fd6c0; }
+
+    .footer { display: flex; align-items: center; justify-content: space-between; }
+    .badges { display: flex; gap: 14px; flex-wrap: wrap; }
+    .badge { padding: 12px 20px; font-size: 21px; font-weight: 600; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: #dcefe9; }
+    .badge.hi { border-color: rgba(79,214,192,0.5); color: #6ff0d6; }
+    .who { text-align: right; font-size: 22px; color: #86b3a9; }
+    .who b { color: #e9fbf6; font-weight: 700; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div>
+      <span class="kicker"><span class="dot"></span> ESP32-S3 · Computer Vision</span>
+      <h1>Gesture Server</h1>
+      <div class="sub">Hand &amp; <b>pinch</b> recognition → Home Assistant</div>
+      <div class="flow">
+        <span>ESP32-S3 CAM</span><span class="arrow">→</span>
+        <span>MediaPipe</span><span class="arrow">→</span>
+        <span>MQTT</span><span class="arrow">→</span>
+        <span>🏠 HA</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="badges">
+        <span class="badge hi">✋ MediaPipe</span>
+        <span class="badge">MJPEG 800×600 @ 25fps</span>
+        <span class="badge">MQTT autodiscovery</span>
+        <span class="badge">Docker</span>
+      </div>
+      <div class="who"><b>github.com/arborae</b><br>ESP32-S3_CAM</div>
+    </div>
+  </div>
+</body>
+
+</html>

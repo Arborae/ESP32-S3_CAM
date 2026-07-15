@@ -1,51 +1,66 @@
 # Contributing Guidelines
 
-Grazie per voler contribuire! ✨
+Thanks for wanting to contribute! ✨
+We value **clarity, modularity and quality** — small, well-explained changes over
+large sweeping ones.
 
-## Requisiti
-- Docker installato e funzionante
-- Python 3.11 (solo per sviluppare lato server, non obbligatorio per usare il container)
+## Requirements
+
+- Docker installed and working
+- Python 3.11 (only for server-side development — not required to use the container)
 - Git
 
-## Flusso di lavoro
-1. **Fork** del repo e crea un branch:
+## Workflow
+
+1. **Fork** the repo and create a branch:
    ```bash
-   git checkout -b feat/descrizione-breve
+   git checkout -b feat/short-description
    ```
-2. Fai modifiche piccole e mirate. Mantieni i commit chiari.
-3. Aggiorna la documentazione se serve (README/CHANGELOG).
-4. Esegui test manuali veloci:
-   - `docker compose up -d` nella cartella `server`
-   - verifica `http://localhost:12345/` e `/status`
-5. Apri una **Pull Request** con descrizione, log e screenshot (se UI).
+2. Make small, focused changes. Keep commits clear.
+3. Update the documentation if needed (README / CHANGELOG).
+4. Run quick manual tests:
+   - `docker compose up -d` in the `server` folder
+   - check `http://localhost:12345/` and `/status`
+5. Open a **Pull Request** with a description, logs and screenshots (if UI-related).
 
-## Stile dei commit
-Usa uno di questi prefissi:
-- `feat:` nuova funzionalità
-- `fix:` bugfix
-- `docs:` documentazione
-- `chore:` manutenzione, refactor non funzionale
+## Commit style
+
+Use one of these prefixes:
+
+- `feat:` new feature
+- `fix:` bug fix
+- `docs:` documentation
+- `chore:` maintenance, non-functional refactor
 - `perf:` performance
-- `test:` test
+- `test:` tests
 
-Esempi:
-- `feat: pinch → publish eventi MQTT su soglia`
-- `fix: gestione reconnect MQTT`
+Examples:
+- `feat: pinch → publish MQTT events on threshold`
+- `fix: handle MQTT reconnect`
 
-## Linee guida codice
-- Niente segreti in chiaro. Usa `.env` / variabili d'ambiente.
-- Mantieni i default **neutri** con placeholder.
-- Evita dipendenze pesanti se non strettamente necessarie.
-- Segui la struttura delle varianti esistenti.
+## Code guidelines
 
-## Segnalazione bug
-Apri una issue usando il template "Bug report" e includi:
-- passaggi per riprodurre
-- log rilevanti (container)
-- info sistema (OS/architettura, versione Docker)
-- screenshot se utile
+- **No secrets in plain text.** Use `.env` / environment variables.
+- Keep defaults **neutral**, with placeholders.
+- Avoid heavy dependencies unless strictly necessary.
+- Follow the structure of the existing code.
 
-## Funzionalità/idee
-Usa il template "Feature request". Spiega perché è utile e come immagini l’uso.
+## Reporting bugs
 
-Buon hacking! 💚
+Open an issue using the **"Bug report"** template and include:
+- steps to reproduce
+- relevant (container) logs
+- system info (OS/architecture, Docker version)
+- a screenshot if helpful
+
+## Features / ideas
+
+Use the **"Feature request"** template. Explain why it's useful and how you
+imagine it working.
+
+## Security
+
+Found a vulnerability? Please read [`SECURITY.md`](./SECURITY.md) — do **not**
+open a public issue.
+
+Happy hacking! 💚

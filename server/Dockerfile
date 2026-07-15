@@ -20,7 +20,7 @@ ENV TARGET_FPS="25"
 ENV MQTT_HOST="mqtt.local"
 ENV MQTT_PORT="1883"
 ENV MQTT_USER="mqtt_user"
-ENV MQTT_PASSWORD=""
+# MQTT_PASSWORD is intentionally NOT set here (provide it at runtime via .env / -e)
 ENV MQTT_BASE_TOPIC="gesture32"
 ENV MQTT_DISCOVERY_PREFIX="homeassistant"
 ENV MQTT_CLIENT_ID="gesture32-server"
