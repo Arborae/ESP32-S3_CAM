@@ -1,1 +1,0 @@
-Inserisci qui le immagini/gif del progetto.
