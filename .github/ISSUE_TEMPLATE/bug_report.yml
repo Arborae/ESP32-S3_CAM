@@ -1,37 +1,37 @@
 name: Bug report
-description: Segnala un problema o un comportamento inatteso
+description: Report a problem or unexpected behavior
 labels: [bug]
 body:
   - type: textarea
     attributes:
-      label: Descrizione del bug
-      description: Spiega cosa succede e cosa ti aspettavi
-      placeholder: Descrizione chiara e concisa...
+      label: Bug description
+      description: Explain what happens and what you expected
+      placeholder: Clear and concise description...
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Passi per riprodurre
+      label: Steps to reproduce
       value: |
-        1. Avvio container con ...
-        2. Apro ...
-        3. Osservo ...
+        1. Start the container with ...
+        2. Open ...
+        3. Observe ...
   - type: textarea
     attributes:
-      label: Log/Output rilevanti
-      description: Incolla qui i log del container o screenshot
+      label: Relevant logs/output
+      description: Paste container logs or screenshots here
       render: bash
   - type: input
     attributes:
-      label: Versione/commit
-      description: Tag immagine o commit SHA
+      label: Version/commit
+      description: Image tag or commit SHA
   - type: input
     attributes:
-      label: Piattaforma
-      description: OS/architettura (es. Ubuntu 22.04 amd64, RPi4 arm64)
+      label: Platform
+      description: OS/architecture (e.g. Ubuntu 22.04 amd64, RPi4 arm64)
   - type: checkboxes
     attributes:
       label: Checklist
       options:
-        - label: Ho cercato issue simili
-        - label: Ho rimosso dati sensibili dai log
+        - label: I searched for similar issues
+        - label: I removed sensitive data from logs
