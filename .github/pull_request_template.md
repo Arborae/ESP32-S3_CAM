@@ -1,21 +1,21 @@
-## Descrizione
-<!-- Spiega cosa cambia e perché -->
+## Description
+<!-- Explain what changes and why -->
 
-## Tipo di cambiamento
-- [ ] feat (nuova feature)
+## Type of change
+- [ ] feat (new feature)
 - [ ] fix (bugfix)
-- [ ] docs (documentazione)
+- [ ] docs
 - [ ] chore/refactor
 - [ ] perf
 - [ ] test
 
-## Come testare
-<!-- Passi per verificare: comandi, URL, expected behavior -->
+## How to test
+<!-- Steps to verify: commands, URLs, expected behavior -->
 
-## Screenshot/Log
-<!-- Se la PR tocca UI, inserisci immagini/gif -->
+## Screenshots/Logs
+<!-- If the PR touches the UI, add images/gifs -->
 
 ## Checklist
-- [ ] Niente segreti in chiaro (usa .env/ENV)
-- [ ] README/Docs aggiornati se necessario
-- [ ] Testata su almeno una piattaforma (amd64/arm64)
+- [ ] No plaintext secrets (use .env/ENV)
+- [ ] README/Docs updated if needed
+- [ ] Tested on at least one platform (amd64/arm64)
