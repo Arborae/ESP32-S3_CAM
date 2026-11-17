@@ -1,6 +1,6 @@
 # ESP32-S3 CAM → Gesture Server (MediaPipe + MQTT + Home Assistant)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE)
 [![Docker build](https://img.shields.io/github/actions/workflow/status/arborae/ESP32-S3_CAM/docker.yml?label=Build%20%26%20Publish&logo=github)](https://github.com/arborae/ESP32-S3_CAM/actions/workflows/docker.yml)
 [![GHCR](https://img.shields.io/badge/GHCR-images-blue?logo=docker)](https://github.com/arborae/ESP32-S3_CAM/pkgs/container/esp32-s3_cam)
 
@@ -170,4 +170,4 @@ Tips:
 
 ## 📝 License
 
-MIT — see [`LICENSE`](./LICENSE).
+GNU General Public License v3.0 (GPLv3) — see [`LICENSE`](./LICENSE).

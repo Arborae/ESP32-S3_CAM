@@ -50,4 +50,4 @@ jobs:
           labels: |
             org.opencontainers.image.source=https://github.com/arborae/ESP32-S3_CAM
             org.opencontainers.image.description=ESP32-S3 CAM gesture server (MediaPipe + MQTT + Home Assistant)
-            org.opencontainers.image.licenses=MIT
+            org.opencontainers.image.licenses=GPL-3.0-only
